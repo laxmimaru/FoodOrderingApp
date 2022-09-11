@@ -1,52 +1,46 @@
 import styled from 'styled-components';
 
 export const MealTypesStyles = styled.div`
-.food-item1{
-    display: inline-block;    
-    height: 150px;
-    width: 300px;
-    margin: 10px;
-    border: double blue;
+
+
+.meal-container{
+    width:1000px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    border: 5px solid yellow;
+    margin-left: 50px;
 }
 
-.food-item2{
-    display: inline-block;
-    background-color: green;
-    height: 150px;
+
+.meal-type{     
     width: 300px;
+    height: 150px;
     margin: 10px;
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: row;
 }
 
-.food-item3{        
-    background-color: blue;
-    height: 150px;
-    width: 300px;    
-    margin: 10px;
-    display: inline-block;
+.img-div{
+    width: 150px;
+    border: 5px solid black;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.food-item4{    
-    background-color: red;
-    height: 150px;
-    width: 300px;
-    margin: 10px;    
-    display: inline-block;
-}
+.text-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    border: 5px solid red;
 
-.food-item5{    
-    background-color:orange;
-    height: 150px;
-    width: 300px;
-    margin: 10px;
-    display: inline-block;
-}
-
-.food-item6{
-    display: inline-block;
-    background-color: blueviolet;
-    height: 150px;
-    width: 300px;
-    margin: 10px;
 }
 
 `
