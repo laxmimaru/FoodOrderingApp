@@ -1,63 +1,19 @@
-import styled from 'styled-components';
-
-export const MealTypesStyles = styled.div`
-
-
-.meal-container{
-    width:1000px;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    border: 5px solid yellow;
-    margin-left: 50px;
-}
-
-
-.meal-type{     
-    width: 300px;
-    height: 150px;
-    margin: 10px;
-    border: 5px solid blue;
-    display: flex;
-    flex-direction: row;
-}
-
-.img-div{
-    width: 150px;
-    border: 5px solid black;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.text-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 150px;
-    border: 5px solid red;
-
-}
-
-`
-
-export const FilterStyles=styled.div`
 .header{
     background-color: crimson;
     width: 100%;
     height: 70px;
     position: relative;
+    
+
 }
+
 .headerimage{
     height: 60px;
     padding: 2px;
     padding-left: 80px;
 
 }
+
 .createaccount{
     height: 30px;
     width: 150px;
@@ -65,12 +21,32 @@ export const FilterStyles=styled.div`
     color: white;
 }
 
-.FilterGrid{
-    display: grid;
-    grid-template: 150px / auto;
-    border: 5px solid black;
+.banner{
+    
+    height: 20px;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    padding-bottom: 30px;
+
+}
+
+.filterdiv{
+    display: inline-block;    
     width: 200px;
-    margin-left: 50px;
+    height: 500px;    
+    left: 50px;
+    position: absolute;
+
+}
+
+.innerfilter{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border: darkblue solid 2px;
 }
 
 .options{
@@ -134,5 +110,3 @@ export const FilterStyles=styled.div`
     width: 380px;
     margin-left: 50px;
 }
-
-`

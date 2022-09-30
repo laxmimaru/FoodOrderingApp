@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Home from './components/Home';
+import {FilterPage} from './components/Filter/FilterPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<Home></Home>}></Route>
+            <Route path='/FilterPage/:selectedMealType/:selectedCity' element={<FilterPage></FilterPage>}></Route>
+        </Routes>
+    </BrowserRouter>    
   </React.StrictMode>
 );
 

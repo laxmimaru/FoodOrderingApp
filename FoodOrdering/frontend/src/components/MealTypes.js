@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { MealTypesStyles } from '../styles/AppStyles';
 import { BE_CON_PORT } from '../constants/constants'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
-export default function MealTypes() {
+export default function MealTypes({ setSelectedMealType,selectedCity }) {
     const [mealTypes, setMealTypes] = useState([]);
 
     const getMealTypeDetails = () => {
@@ -33,23 +34,28 @@ export default function MealTypes() {
     )
 
     console.log('mealTypes state = ', mealTypes)
+
     return (
         <MealTypesStyles>
 
             <div className='meal-container'>
 
-                {mealTypes.map((mealType,index) => {
+                {mealTypes.map((mealType, index) => {
                     return (
                         <>
-                            <div className="meal-type" key={index}>
-                                <div className='img-div' key={index}>
-                                    <img src={require(`../Images/${mealType}.jpg`)}></img>
-                                </div>
-                                <div className='text-div' key={index}>
-                                    {mealType}
-                                </div>
-                                
-                            </div>
+                            <nav>
+                                <Link to={`/FilterPage/${mealType}/${selectedCity}`}>
+                                    <div className="meal-type" key={index} onClick={() => setSelectedMealType(mealType)}>
+                                        <div className='img-div' key={index}>
+                                            <img src={require(`../Images/${mealType}.jpg`)}></img>
+                                        </div>
+                                        <div className='text-div' key={index}>
+                                            {mealType}
+                                        </div>
+
+                                    </div>
+                                </Link>
+                            </nav>
                         </>
 
                     )

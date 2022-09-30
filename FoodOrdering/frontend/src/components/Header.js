@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { BE_CON_PORT } from '../constants/constants';
 import axios from 'axios';
+import { FilterPage } from './Filter/FilterPage';
 
-
-export default function Header() {
+export default function Header({setSelectedCity}) {
   const API = 'getCities';
-  const [cities, setCities] = useState([]);
-
+  const [cities, setCities] = useState([]);  
 
   useEffect(() => {
 
@@ -32,6 +31,7 @@ export default function Header() {
   )
 
   console.log('cities state = ', cities);
+
   return (
     <>
       <img src={require('./Dinner.jpg')} style={{
@@ -46,20 +46,18 @@ export default function Header() {
         Find the best restaurants ,cafes and bars
       </div>
       <div style={{
-        textAlign: "center", position: "absolute", top: "150px", right: "400px",
+        textAlign: "center", position: "absolute", top: "150px", left:"300px",
         height: "50px"
       }}>
 
-        <select style={{ height: "30px" }}>
+        <select style={{ height: "30px" }} onChange={(e)=>setSelectedCity(e.target.value)}>
           {
             cities.map((city) => {
-              return <option value={city} key={city}>{city}</option>
+              return <option value={city} key={city} >{city}</option>
             }
 
             )
-          }
-
-
+          }          
         </select>
 
 
