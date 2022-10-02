@@ -23,9 +23,6 @@ const restaurantSchema = new Schema(
     address:{
         type:String
     },
-    cuisine_type:{
-        type:String
-    },
     price:{
         type:Number
     }

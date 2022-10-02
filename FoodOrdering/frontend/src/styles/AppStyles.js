@@ -70,7 +70,7 @@ export const FilterStyles=styled.div`
     grid-template: 150px / auto;
     border: 5px solid black;
     width: 200px;
-    margin-left: 50px;
+    margin: 50px;
 }
 
 .options{

@@ -14,19 +14,33 @@ export const FilterPage = () => {
     const cuisineTypes=[ "North Indian","South Indian","Chinese","FastFood","StreetFood"];
     const [filterCriteria,setFilterCriteria] = useState({});
     const [restaurants,setRestaurants]=useState([]);
+    
    
     const handleCuisineTypes=(e)=>{ 
+        const API = 'resturantFilter';
+        const url = `${BE_CON_PORT}${API}`;
         let $currselectedCuisineTypes = [...selectedCuisineTypes];
         
-        $currselectedCuisineTypes.map((cusiuineType)=>{
-            if(e.target.checked){
-                $currselectedCuisineTypes = [...$currselectedCuisineTypes,e.target.value];
-            }
+        if(e.target.checked){
+            $currselectedCuisineTypes=[...$currselectedCuisineTypes,e.target.value];
+        }else{
+            $currselectedCuisineTypes= selectedCuisineTypes.filter(cuisinType => cuisinType != e.target.value )
         }
-            )
-        
-
+       
+        setSelectedCuisineTypes($currselectedCuisineTypes);
         console.log('$currselectedCuisineTypes = ',$currselectedCuisineTypes);
+
+        let $filterCriteria={...filterCriteria};
+         $filterCriteria['cuisine_type'] = $currselectedCuisineTypes;
+         console.log('$filterCriteria = ',$filterCriteria);
+        setFilterCriteria($filterCriteria);
+        axios.post(url,$filterCriteria)
+        .then((restaurants_result)=>{
+            setRestaurants(restaurants_result?.data?.restaurants);
+        }
+
+        );
+        
     }
 
     const getCityWiseLocations=()=>{
@@ -86,15 +100,11 @@ export const FilterPage = () => {
                 <img src={require( "../../Images/FoodLogo.jpg")}
                 className="headerimage"/>
             </div>
-            
-            <div style={{left:"900px",display:'inline-block',position:"absolute",bottom:"20px"}}
-            >
-                <text style={{color:"white"}}>Login</text>
-                <button type="button" className="createaccount">Create an account</button>
-            </div>
+                       
         </div>
     </div>
         <h1> {params.selectedMealType} Places in {params.selectedCity}</h1>
+        <div style={{display:"inline-block"}}>
         <div className='FilterGrid'>
             <div>
                 <h5>Filters</h5>
@@ -145,8 +155,10 @@ export const FilterPage = () => {
          
                 </div>
         </div>
-
-        <RestaurantDetails restaurants={restaurants}></RestaurantDetails>
+        </div>
+        <div style={{display:"inline-block"}}>
+            <RestaurantDetails restaurants={restaurants}></RestaurantDetails>
+        </div>
     
     </FilterStyles>);
 };
