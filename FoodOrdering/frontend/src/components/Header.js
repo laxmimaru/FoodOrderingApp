@@ -4,11 +4,13 @@ import axios from 'axios';
 import { FilterPage } from './Filter/FilterPage';
 import {FilterStyles} from '../styles/AppStyles';
 import CreateUser from './Users/CreateUser';
+import UserLogin from './Users/UserLogin';
 
 export default function Header({setSelectedCity}) {
   const API = 'getCities';
   const [cities, setCities] = useState([]);  
   const [showCreateUser,setShowCreateUser] = useState(false);
+  const [showUserLogin,setShowUserLogin] = useState(false);
 
   useEffect(() => {
 
@@ -56,13 +58,16 @@ export default function Header({setSelectedCity}) {
         <div style={{left:"100px",display:'flex',position:"absolute",bottom:"60px"}}
               >
                   {<div style={{margin:'5px'}}>
-                  <button className="createaccount" >Login</button>
+                  <button className="createaccount" 
+                  onClick={()=>setShowUserLogin(true)}
+                  >Login</button>
       </div>}
                   <div style={{margin:'5px'}}>
                   <button type="button" className="createaccount"
                   onClick={()=>setShowCreateUser(true)}
                   >Create an account</button>
                   </div>
+                
               </div>
               </FilterStyles>
           </div>
@@ -74,7 +79,14 @@ export default function Header({setSelectedCity}) {
           height: "50px"
         }}>
 
-          <select style={{ height: "30px" }} onChange={(e)=>setSelectedCity(e.target.value)}>
+          <select style={{ height: "30px" }} onChange={(e)=>{
+              setSelectedCity(e.target.value);
+              localStorage.setItem('citySelected',e.target.value);
+              console.log('citySelected = ',localStorage.getItem('citySelected'))
+          }
+            
+            
+            }>
             {
               cities.map((city) => {
                 return <option value={city} key={city} >{city}</option>
@@ -94,7 +106,10 @@ export default function Header({setSelectedCity}) {
         </div>
         
               {
-                showCreateUser&&<CreateUser></CreateUser>
+                showCreateUser&&<CreateUser setShowCreateUser={setShowCreateUser}></CreateUser>
+              }
+              {
+                showUserLogin&&<UserLogin setShowUserLogin={setShowUserLogin}></UserLogin>
               }
             
       </>

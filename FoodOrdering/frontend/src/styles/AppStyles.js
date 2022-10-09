@@ -135,4 +135,31 @@ export const FilterStyles=styled.div`
     margin-left: 50px;
 }
 
+.pagebutton{
+    border: 5px solid grey;
+    border-radius : 5px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+`
+
+export const SignupStyles=styled.div`
+    height: 300px;
+    border: 5px solid red;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    background: white;
+`
+
+export const LoginStyles=styled.div`
+height: 300px;
+    border: 5px solid red;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    background: white;
 `

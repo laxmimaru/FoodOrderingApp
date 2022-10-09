@@ -1,17 +1,35 @@
 import React, { useState } from 'react'
 import {BE_CON_PORT} from '../../constants/constants';
 import axios from 'axios';
+import {SignupStyles} from '../../styles/AppStyles';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export default function CreateUser() {
+
+export default function CreateUser({setShowCreateUser}) {
     const [formData,setFormData] = useState({});
 
     const submitUser=(e)=>{
         e.preventDefault();
         const API = 'createNewUser';
         const url = `${BE_CON_PORT}${API}`
-        axios.post(url,formData).then((result)=> console.log(result)
+        axios.post(url,formData).then((result)=> {
+          setTimeout(()=>{
+            setShowCreateUser(false);
+          },
+          5000
+          )
+          
+          toast("User Successfully Created");
+          
+        }
+        )
+        .catch((err)=>{
+          console.log(err);
+          toast.error("Error in creating the user");
+        }
 
-        );
+        )        
     
     }
 
@@ -40,7 +58,8 @@ export default function CreateUser() {
 
     console.log('formData = ',formData);
   return (
-    <div style={{heigh:'100px',border:'5px solid red'}}>
+    <SignupStyles>
+    <div >
         <form onSubmit={e=>submitUser(e)}>
         <h1>Signup Form</h1>
         <label for='firstname'>FirstName</label>
@@ -51,9 +70,11 @@ export default function CreateUser() {
         <input type='email' id='email' name='email' onChange={e=>handleFormData(e)}></input><br/><br/>
         <label for='password'>password</label>
         <input type='password' id='password' name='password' onChange={e=>handleFormData(e)}></input><br/><br/>
-        <input type='submit'></input><br/><br/>
+        <input type='submit' style={{marginRight:'100px'}}></input>
+        <button   onClick={()=>setShowCreateUser(false)}>Cancel</button>
         </form>
-
+        <ToastContainer />
     </div>
+    </SignupStyles>
   )
 }

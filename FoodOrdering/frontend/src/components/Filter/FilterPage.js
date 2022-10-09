@@ -12,8 +12,9 @@ export const FilterPage = () => {
     const [chosenLocation,setChosenLocation] = useState();
     const [selectedCuisineTypes,setSelectedCuisineTypes] = useState([]);    
     const cuisineTypes=[ "North Indian","South Indian","Chinese","FastFood","StreetFood"];
-    const [filterCriteria,setFilterCriteria] = useState({});
+    const [filterCriteria,setFilterCriteria] = useState({pageNo:1});
     const [restaurants,setRestaurants]=useState([]);
+    const [citySelected,setCitySelected] = useState(localStorage.getItem('citySelected'));
     
    
     const handleCuisineTypes=(e)=>{ 
@@ -49,7 +50,7 @@ export const FilterPage = () => {
         axios.get(url).then((res)=>{
             console.log('locations = ',res.data.locations);
             const $allLocations = res.data.locations;
-            const $selectedCityLocations = $allLocations.filter(city => city.city_name === params.selectedCity)
+            const $selectedCityLocations = $allLocations.filter(city => city.city_name === citySelected)
             console.log('$selectedCityLocations = ',$selectedCityLocations);
             const $selectedLocations = $selectedCityLocations.map(city => city.location );
             console.log('$selectedLocations = ',$selectedLocations);
@@ -82,6 +83,24 @@ export const FilterPage = () => {
 
     }
 
+    const handlePageChange=(pageNum)=>{
+        console.log('pageNum = ',pageNum)
+        const API = 'resturantFilter';
+        const url = `${BE_CON_PORT}${API}`;
+        let $filterCriteria={...filterCriteria};
+         $filterCriteria['pageNo'] = pageNum;
+        setFilterCriteria($filterCriteria);
+        console.log('$filterCriteria pagenum  = ',$filterCriteria)
+        axios.post(url,$filterCriteria)
+        .then((restaurants_result)=>{
+            setRestaurants(restaurants_result?.data?.restaurants);
+        }
+
+        );
+       
+
+    }
+
     useEffect(()=>{
         getCityWiseLocations();
     },
@@ -103,7 +122,7 @@ export const FilterPage = () => {
                        
         </div>
     </div>
-        <h1> {params.selectedMealType} Places in {params.selectedCity}</h1>
+        <h1> {params.selectedMealType} Places in {citySelected}</h1>
         <div style={{display:"inline-block"}}>
         <div className='FilterGrid'>
             <div>
@@ -158,6 +177,19 @@ export const FilterPage = () => {
         </div>
         <div style={{display:"inline-block"}}>
             <RestaurantDetails restaurants={restaurants}></RestaurantDetails>
+        </div>
+
+        <div style={{marginLeft:'500px'}}>
+                    {
+                        restaurants.map((restName,index)=>{
+                            return <button key={index} className='pagebutton'
+                            onClick={(index)=>handlePageChange(index+1)}
+                            >{index+1}</button>
+                        }
+                        )
+
+                        
+                    }
         </div>
     
     </FilterStyles>);
