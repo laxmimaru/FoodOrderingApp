@@ -1,0 +1,267 @@
+[{
+  "_id": {
+    "$oid": "62ed15f8fc6aaf3d40d38c33"
+  },
+  "email": "john@edureka.com",
+  "firstname": "john",
+  "lastname": "mecham",
+  "password": "john123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ed1687fc6aaf3d40d38c35"
+  },
+  "email": "david@edureka.com",
+  "firstname": "david",
+  "lastname": "paul",
+  "password": "david",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ed16a9fc6aaf3d40d38c37"
+  },
+  "email": "manish@edureka.com",
+  "firstname": "manish",
+  "lastname": "bora",
+  "password": "manish123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6338aafc865c051c11378a66"
+  },
+  "email": "laxmimaru23@gmail.com",
+  "firstname": "Laxmi",
+  "lastname": "G",
+  "password": "uiiiiiiiiiiiiiii",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6338b10f2c20da1304493fc7"
+  },
+  "email": "laxmimaru4@gmail.com",
+  "firstname": "Laxmi",
+  "lastname": "G",
+  "password": "rrrrrrrrrrrrrr",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6338b1a02c20da1304493fc9"
+  },
+  "email": "rr@mail.com",
+  "firstname": "rr",
+  "lastname": "rr",
+  "password": "rrrrrrr",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6338b20f2c20da1304493fcb"
+  },
+  "email": "ss@mail.com",
+  "firstname": "ss",
+  "lastname": "ss",
+  "password": "ssssssssssssssssss",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633946584b73f5086a34c291"
+  },
+  "email": "tt@tt.com",
+  "firstname": "tt",
+  "lastname": "tt",
+  "password": "tttttttttttttttttttt",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633965507fff2acde5e845d2"
+  },
+  "password": "ddddddddddddddddddd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6339666a7fff2acde5e845d8"
+  },
+  "email": "uu@uu.com",
+  "firstname": "rr",
+  "lastname": "tt",
+  "password": "pppppppppppppppppppppp",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633966fc7fff2acde5e845de"
+  },
+  "email": "ss@ss.com",
+  "firstname": "rr",
+  "lastname": "tt",
+  "password": "sssssssssssssssssssssss",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6340409b86e7dc4841589359"
+  },
+  "email": "123@123.com",
+  "firstname": "123",
+  "lastname": "123",
+  "password": "123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63413fa10738dbbdfcaff114"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63413fa10738dbbdfcaff112"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634141bc0738dbbdfcaff126"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634142c50738dbbdfcaff12d"
+  },
+  "email": "44@44.com",
+  "firstname": "44",
+  "lastname": "44",
+  "password": "44",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634145390738dbbdfcaff133"
+  },
+  "email": "66@66.com",
+  "firstname": "66",
+  "lastname": "66",
+  "password": "66",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634146ef0738dbbdfcaff139"
+  },
+  "email": "rr@rr.com",
+  "firstname": "rrr",
+  "lastname": "rr",
+  "password": "rr",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341473e0738dbbdfcaff13f"
+  },
+  "email": "ss@ss.com",
+  "firstname": "ss",
+  "lastname": "ss",
+  "password": "ss",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634147e80738dbbdfcaff145"
+  },
+  "email": "tt@tt.com",
+  "firstname": "tt",
+  "lastname": "tt",
+  "password": "tt",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634148340738dbbdfcaff14b"
+  },
+  "email": "uu@uu.com",
+  "firstname": "uu",
+  "lastname": "u",
+  "password": "uu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634148420738dbbdfcaff14d"
+  },
+  "email": "uu@uu.com",
+  "firstname": "uu",
+  "lastname": "u",
+  "password": "uu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634148420738dbbdfcaff14f"
+  },
+  "email": "uu@uu.com",
+  "firstname": "uu",
+  "lastname": "u",
+  "password": "uu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341484c0738dbbdfcaff151"
+  },
+  "email": "uu@uu",
+  "firstname": "uu",
+  "lastname": "u",
+  "password": "uu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341485a0738dbbdfcaff153"
+  },
+  "email": "uu@uu",
+  "firstname": "uu",
+  "lastname": "u",
+  "password": "    ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634148a70738dbbdfcaff155"
+  },
+  "email": "uu@uu",
+  "firstname": "uu",
+  "lastname": "u",
+  "password": "    ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634148c70738dbbdfcaff15b"
+  },
+  "email": "ff@ff.com",
+  "firstname": "ff",
+  "lastname": "ff",
+  "password": "ff",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341501b0738dbbdfcaff161"
+  },
+  "email": "e@ee.com",
+  "firstname": "ee",
+  "lastname": "ee",
+  "password": "ee",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "634151500738dbbdfcaff163"
+  },
+  "email": "yy@y.com",
+  "firstname": "yy",
+  "lastname": "yy",
+  "password": "yy",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341af1db3e76d782665d956"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341af1db3e76d782665d958"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341af24b3e76d782665d95a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6341af25b3e76d782665d95c"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "62f7e2a26005062b10035427"
+  },
+  "meal_type": 1,
+  "name": "Breakfast"
+},{
+  "_id": {
+    "$oid": "62f7e2a26005062b10035428"
+  },
+  "meal_type": 2,
+  "name": "Lunch"
+},{
+  "_id": {
+    "$oid": "62f7e2a26005062b10035429"
+  },
+  "meal_type": 3,
+  "name": "Snacks"
+},{
+  "_id": {
+    "$oid": "62f7e2a26005062b1003542a"
+  },
+  "meal_type": 4,
+  "name": "Drinks"
+},{
+  "_id": {
+    "$oid": "62f7e2a26005062b1003542b"
+  },
+  "meal_type": 5,
+  "name": "NightLife"
+},{
+  "_id": {
+    "$oid": "631db7a0452ccf2aeecfd374"
+  },
+  "name": "fermented"
+},{
+  "_id": {
+    "$oid": "631db7f4452ccf2aeecfd375"
+  },
+  "name": "DryFruits"
+}]

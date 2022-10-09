@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "63146e6637114c5feeb45191"
+  },
+  "city": "Hyderabad"
+},{
+  "_id": {
+    "$oid": "63146e6f37114c5feeb45192"
+  },
+  "city": "Mumbai"
+},{
+  "_id": {
+    "$oid": "63146e7737114c5feeb45193"
+  },
+  "city": "Bangalore"
+},{
+  "_id": {
+    "$oid": "63146e7d37114c5feeb45194"
+  },
+  "city": "chennai"
+},{
+  "_id": {
+    "$oid": "631c5938452ccf2aeecfd36e"
+  },
+  "city": "calcutta"
+}]

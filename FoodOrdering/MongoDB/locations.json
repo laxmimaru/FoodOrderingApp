@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "632b094d3fec952c37a899f5"
+  },
+  "city_name": "Hyderabad",
+  "city_id": 1,
+  "location": "kondapur",
+  "country": "India"
+},{
+  "_id": {
+    "$oid": "632b09d73fec952c37a899f6"
+  },
+  "city_name": "Hyderabad",
+  "city_id": 1,
+  "location": "madhapur",
+  "country": "India"
+},{
+  "_id": {
+    "$oid": "632b09ed3fec952c37a899f7"
+  },
+  "city_name": "Mumbai",
+  "city_id": 2,
+  "location": "Andheri",
+  "country": "India"
+},{
+  "_id": {
+    "$oid": "632b09f83fec952c37a899f8"
+  },
+  "city_name": "Mumbai",
+  "city_id": 2,
+  "location": "Malad",
+  "country": "India"
+},{
+  "_id": {
+    "$oid": "632b0a073fec952c37a899f9"
+  },
+  "city_name": "Mumbai",
+  "city_id": 2,
+  "location": "Goregaon",
+  "country": "India"
+}]

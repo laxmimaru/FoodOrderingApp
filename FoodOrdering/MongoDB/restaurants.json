@@ -1,0 +1,173 @@
+[{
+  "_id": {
+    "$oid": "62f7fcc4f9b98ed1ec25f53d"
+  },
+  "id": 500,
+  "name": "KFC",
+  "city_name": "Hyderabad",
+  "cityId": 100,
+  "area": "Kondapur",
+  "address": "Kondapur",
+  "contact_number": "",
+  "mealtype": "Snacks",
+  "mealtypeId": 10,
+  "location": "Kondapur",
+  "cuisine_type": "North Indian",
+  "price": 200
+},{
+  "_id": {
+    "$oid": "62f7fd4bf9b98ed1ec25f53e"
+  },
+  "id": 501,
+  "name": "Dominos",
+  "city_name": "Mumbai",
+  "cityId": 101,
+  "area": "Andheri",
+  "address": "Andheri",
+  "thumb": "",
+  "contact_number": "",
+  "mealtypeId": 11,
+  "location": "Andheri",
+  "cuisine_type": "North Indian",
+  "meal_type": "Lunch",
+  "price": 250
+},{
+  "_id": {
+    "$oid": "62f7fd4bf9b98ed1ec25f53f"
+  },
+  "id": 501,
+  "name": "Subway",
+  "city_name": "Mumbai",
+  "cityId": 101,
+  "area": "Andheri",
+  "address": "Andheri",
+  "thumb": "",
+  "contact_number": "",
+  "mealtypeId": 11,
+  "location": "Andheri",
+  "meal_type": "Dinner",
+  "cuisine_type": "South Indian",
+  "price": 550
+},{
+  "_id": {
+    "$oid": "62fca02cad1a5f0fcee3d12c"
+  },
+  "id": "550",
+  "name": "sharavana",
+  "city_name": "Chennai",
+  "cityId": 104,
+  "address": "navalur",
+  "cost": 400,
+  "contact_number": "",
+  "mealtype": "Rasam",
+  "mealtypeId": "14",
+  "Cuisine": [
+    {
+      "cuisine": "South Indian"
+    }
+  ],
+  "location": "navalur"
+},{
+  "_id": {
+    "$oid": "62fca02cad1a5f0fcee3d12d"
+  },
+  "id": "600",
+  "name": "iyengar",
+  "city_name": "bangalore",
+  "cityId": 106,
+  "address": "white square",
+  "cost": 500,
+  "contact_number": "",
+  "mealtype": "kheer",
+  "mealtypeId": "20",
+  "Cuisine": [
+    {
+      "cuisine": "South Indian"
+    }
+  ],
+  "location": "white square"
+},{
+  "_id": {
+    "$oid": "62fcebdfad1a5f0fcee3d12e"
+  },
+  "id": 500,
+  "name": "KFC",
+  "city_name": "Hyderabad",
+  "cityId": 101,
+  "area": "Kondapur",
+  "address": "Kondapur",
+  "cost": 200,
+  "contact_number": "",
+  "mealtype": "Snacks",
+  "mealtypeId": 10,
+  "Cuisine": "North Indian",
+  "location": "Kondapur"
+},{
+  "_id": {
+    "$oid": "632aebcc3fec952c37a899f2"
+  },
+  "id": 502,
+  "name": "Subway",
+  "city_name": "Mumbai",
+  "cityId": 101,
+  "area": "Malad",
+  "address": "Malad",
+  "thumb": "",
+  "contact_number": "",
+  "mealtypeId": 12,
+  "location": "Malad",
+  "meal_type": "Snacks",
+  "cuisine_type": "North Indian",
+  "price": 100
+},{
+  "_id": {
+    "$oid": "63380a43b8ea4e0ae919427d"
+  },
+  "id": 501,
+  "name": "MainLand China",
+  "city_name": "Mumbai",
+  "cityId": 101,
+  "area": "Andheri",
+  "address": "Andheri",
+  "thumb": "",
+  "contact_number": "",
+  "mealtypeId": 11,
+  "location": "Andheri",
+  "cuisine_type": "Chinese",
+  "meal_type": "Breakfast",
+  "price": 500
+},{
+  "_id": {
+    "$oid": "634293d27ef550c815a8896b"
+  },
+  "id": 501,
+  "name": "Momos and delicacy",
+  "city_name": "Mumbai",
+  "cityId": 101,
+  "area": "Andheri",
+  "address": "Andheri",
+  "thumb": "",
+  "contact_number": "",
+  "mealtypeId": 11,
+  "location": "Andheri",
+  "cuisine_type": "North Indian",
+  "meal_type": "Lunch",
+  "price": 250
+},{
+  "_id": {
+    "$oid": "634293f47ef550c815a8896c"
+  },
+  "id": 501,
+  "name": "CreamStone",
+  "city_name": "Mumbai",
+  "cityId": 101,
+  "area": "Andheri",
+  "address": "Andheri",
+  "thumb": "",
+  "contact_number": "",
+  "mealtypeId": 11,
+  "location": "Andheri",
+  "cuisine_type": "North Indian",
+  "meal_type": "Lunch",
+  "price": 250
+}]
